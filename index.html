@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>The Archivist Protocol</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="indexstyle.css">
+
 </head>
+
 <body>
-    <body>
 
     <canvas id="embers"></canvas>
 
     <div id="papers"></div>
 
-    <div class="container">
+    <div class="center">
 
-    <div class="paper">
-
-        <h1>THE ARCHIVIST'S LEDGER</h1>
-
-        <div class="seal">
-            CLASSIFICATION: READER TESTIMONIES
-        </div>
-
-        <p class="intro">
-            The manuscript has concluded. Before this record is returned to the shelves,
-            you are invited to leave your observations for future researchers.
+        <p class="status">
+            RECOVERING ARCHIVE...
         </p>
 
-        <h2>What did you think of the story?</h2>
+        <h1 class="glitch"
+            data-text="THE ARCHIVIST PROTOCOL">
 
-        <div class="comment-box">
+            THE ARCHIVIST PROTOCOL
 
-            <input
-                type="text"
-                id="nameInput"
-                placeholder="State your name [This won't be shown]"
-            >
+        </h1>
 
-            <textarea
-                id="commentInput"
-                placeholder="Record your testimony..."
-            ></textarea>
+        <div class="loading-bar">
 
-            <button id="postBtn">
-                Submit to Archive
-            </button>
+            <div class="loading-fill"></div>
 
         </div>
 
-        <hr>
+        <a href="ledger.html"
+           class="enter-btn">
 
-        <h3>ARCHIVED TESTIMONIES</h3>
+            ENTER ARCHIVE
 
-        <ul id="comments"></ul>
+        </a>
 
     </div>
 
-    <script type="module" src="script.js"></script>
+    <script src="embers.js"></script>
+
     <script src="papers.js"></script>
 
 </body>
+
 </html>
