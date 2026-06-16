@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Archivist Protocol</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+
+    <canvas id="embers"></canvas>
+
+    <div id="papers"></div>
+
+    <div class="container">
+
+    <div class="paper">
+
+        <h1>THE ARCHIVIST'S LEDGER</h1>
+
+        <div class="seal">
+            CLASSIFICATION: READER TESTIMONIES
+        </div>
+
+        <p class="intro">
+            The manuscript has concluded. Before this record is returned to the shelves,
+            you are invited to leave your observations for future researchers.
+        </p>
+
+        <h2>What did you think of the story?</h2>
+
+        <div class="comment-box">
+
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="State your name [This won't be shown]"
+            >
+
+            <textarea
+                id="commentInput"
+                placeholder="Record your testimony..."
+            ></textarea>
+
+            <button id="postBtn">
+                Submit to Archive
+            </button>
+
+        </div>
+
+        <hr>
+
+        <h3>ARCHIVED TESTIMONIES</h3>
+
+        <ul id="comments"></ul>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script src="papers.js"></script>
+
+</body>
+</html>

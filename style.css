@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Special+Elite&display=swap');
+
+body {
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.15),
+            rgba(0,0,0,0.15)
+        ),
+        #d8c8a5;
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: #2e2418;
+
+    margin: 0;
+    padding: 40px;
+}
+
+.paper {
+    max-width: 850px;
+
+    margin: auto;
+
+    background: #f7f0dc;
+
+    padding: 60px;
+
+    box-shadow:
+        0 0 40px rgba(0,0,0,0.25);
+
+    border: 2px solid #6f5a3e;
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 4rem;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+.seal {
+    width: fit-content;
+
+    margin: 0 auto 30px auto;
+
+    padding: 8px 15px;
+
+    border: 2px solid #8b0000;
+
+    color: #8b0000;
+
+    font-weight: bold;
+
+    transform: rotate(-2deg);
+}
+
+.intro {
+    text-align: center;
+
+    font-size: 1.3rem;
+
+    line-height: 1.6;
+
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.comment-box {
+    margin-top: 25px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #7b6749;
+
+    background: #fcf7ea;
+
+    font-family: inherit;
+
+    font-size: 1.1rem;
+}
+
+textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+button {
+    background: #5b4632;
+
+    color: #f7f0dc;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 1.1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+hr {
+    margin: 50px 0;
+    border: none;
+    border-top: 2px solid #6f5a3e;
+}
+
+h3 {
+    text-align: center;
+
+    letter-spacing: 2px;
+}
+
+#comments {
+    list-style: none;
+    padding: 0;
+}
+
+#comments li {
+    background: #fffaf0;
+
+    border-left: 6px solid #5b4632;
+
+    margin-bottom: 15px;
+
+    padding: 20px;
+
+    font-size: 1.15rem;
+
+    line-height: 1.5;
+
+    position: relative;
+}
+
+#comments li::before {
+    content: "ARCHIVED";
+
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    color: rgba(139,0,0,0.25);
+
+    font-family: "Special Elite", monospace;
+
+    font-size: 1.1rem;
+
+    transform: rotate(-12deg);
+}
