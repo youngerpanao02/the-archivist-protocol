@@ -101,9 +101,23 @@
     const music =
         document.getElementById("bg-music");
 
-    function startMusic() {
+    async function startMusic() {
 
-        music.play();
+        try {
+
+            await music.play();
+
+            console.log(
+                "Music started!"
+            );
+
+        } catch (err) {
+
+            console.log(
+                "Playback blocked:",
+                err
+            );
+        }
 
         document.removeEventListener(
             "click",
@@ -117,7 +131,6 @@
     );
 
 </script>
-
 </body>
 
 </html>
