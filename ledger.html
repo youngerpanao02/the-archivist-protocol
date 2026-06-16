@@ -14,6 +14,27 @@
           href="style.css">
 
 </head>
+<script>
+
+    const music =
+        document.getElementById("bg-music");
+
+    function startMusic() {
+
+        music.play();
+
+        document.removeEventListener(
+            "click",
+            startMusic
+        );
+    }
+
+    document.addEventListener(
+        "click",
+        startMusic
+    );
+
+</script>
 
 <body>
 
