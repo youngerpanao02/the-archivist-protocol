@@ -99,7 +99,7 @@ h1 {
 
 .glitch::after {
 
-    color: rgba(0,150,255,0.4);
+    color: rgba(207, 131, 0, 0.4);
 
     animation:
         glitch2 2s infinite;
