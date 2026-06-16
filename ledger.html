@@ -14,28 +14,6 @@
           href="style.css">
 
 </head>
-<script>
-
-    const music =
-        document.getElementById("bg-music");
-
-    function startMusic() {
-
-        music.play();
-
-        document.removeEventListener(
-            "click",
-            startMusic
-        );
-    }
-
-    document.addEventListener(
-        "click",
-        startMusic
-    );
-
-</script>
-
 <body>
 
     <!-- EMBERS -->
@@ -45,7 +23,7 @@
     <div id="papers"></div>
 
     <!-- BACKGROUND MUSIC -->
-    <audio autoplay loop id="bg-music">
+    <audio loop id="bg-music">
 
         <source
             src="audio.mp3"
@@ -117,6 +95,28 @@
 <script src="embers.js"></script>
 <script src="papers.js"></script>
 <script type="module" src="script.js"></script>
+
+<script>
+
+    const music =
+        document.getElementById("bg-music");
+
+    function startMusic() {
+
+        music.play();
+
+        document.removeEventListener(
+            "click",
+            startMusic
+        );
+    }
+
+    document.addEventListener(
+        "click",
+        startMusic
+    );
+
+</script>
 
 </body>
 
