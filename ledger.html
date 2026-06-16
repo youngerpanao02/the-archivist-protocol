@@ -1,66 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>The Archivist Protocol</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <title>The Archivist's Ledger</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
-<body>
-    <body>
 
+<body>
+
+    <!-- EMBERS -->
     <canvas id="embers"></canvas>
 
+    <!-- FLOATING PAPERS -->
     <div id="papers"></div>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio autoplay loop id="bg-music">
+
+        <source
+            src="Taylor Swift - Fortnight (feat. Post Malone).mp3"
+            type="audio/mpeg">
+
+    </audio>
 
     <div class="container">
 
-    <div class="paper">
+        <div class="paper">
 
-        <h1>THE ARCHIVIST'S LEDGER</h1>
+            <h1>
+                THE ARCHIVIST'S LEDGER
+            </h1>
 
-        <div class="seal">
-            CLASSIFICATION: READER TESTIMONIES
+            <div class="seal">
+                CLASSIFICATION: READER TESTIMONIES
+            </div>
+
+            <p class="intro">
+
+                The manuscript has concluded.
+
+                Before this record is returned to the shelves,
+                you are invited to leave your observations
+                for future researchers.
+
+            </p>
+
+            <h2>
+                What did you think of the story?
+            </h2>
+
+            <div class="comment-box">
+
+                <input
+                    type="text"
+                    id="nameInput"
+                    placeholder="State your name [This won't be shown]"
+                >
+
+                <textarea
+                    id="commentInput"
+                    placeholder="Record your testimony..."
+                ></textarea>
+
+                <button id="postBtn">
+
+                    Submit to Archive
+
+                </button>
+
+            </div>
+
+            <hr>
+
+            <h3>
+                ARCHIVED TESTIMONIES
+            </h3>
+
+            <ul id="comments"></ul>
+
         </div>
-
-        <p class="intro">
-            The manuscript has concluded. Before this record is returned to the shelves,
-            you are invited to leave your observations for future researchers.
-        </p>
-
-        <h2>What did you think of the story?</h2>
-
-        <div class="comment-box">
-
-            <input
-                type="text"
-                id="nameInput"
-                placeholder="State your name [This won't be shown]"
-            >
-
-            <textarea
-                id="commentInput"
-                placeholder="Record your testimony..."
-            ></textarea>
-
-            <button id="postBtn">
-                Submit to Archive
-            </button>
-
-        </div>
-
-        <hr>
-
-        <h3>ARCHIVED TESTIMONIES</h3>
-
-        <ul id="comments"></ul>
 
     </div>
 
-    <script type="module" src="script.js"></script>
-    <script src="papers.js"></script>
+    <!-- SCRIPTS -->
+
+<script src="embers.js"></script>
+<script src="papers.js"></script>
+<script type="module" src="script.js"></script>
 
 </body>
+
 </html>
