@@ -15,6 +15,15 @@
 
 </head>
 <body>
+    <div id="start-screen">
+
+    <button id="enter-btn">
+
+        This story isn't mine [ 1 4 3 ]
+
+    </button>
+
+</div>
 
     <!-- EMBERS -->
     <canvas id="embers"></canvas>
@@ -23,10 +32,10 @@
     <div id="papers"></div>
 
     <!-- BACKGROUND MUSIC -->
-    <audio loop id="bg-music">
+    <audio controls loop id="bg-music">
 
         <source
-            src="morgan-ambient-calm-ambient-dreamscape-529861.mp3"
+            src="audio.mp3"
             type="audio/mpeg">
 
     </audio>
@@ -99,35 +108,43 @@
 <script>
 
     const music =
-        document.getElementById("bg-music");
-
-    async function startMusic() {
-
-        try {
-
-            await music.play();
-
-            console.log(
-                "Music started!"
-            );
-
-        } catch (err) {
-
-            console.log(
-                "Playback blocked:",
-                err
-            );
-        }
-
-        document.removeEventListener(
-            "click",
-            startMusic
+        document.getElementById(
+            "bg-music"
         );
-    }
 
-    document.addEventListener(
+    const startScreen =
+        document.getElementById(
+            "start-screen"
+        );
+
+    const enterBtn =
+        document.getElementById(
+            "enter-btn"
+        );
+
+    enterBtn.addEventListener(
         "click",
-        startMusic
+        async () => {
+
+            try {
+
+                await music.play();
+
+            } catch (err) {
+
+                console.log(err);
+            }
+
+            startScreen.style.opacity =
+                "0";
+
+            setTimeout(() => {
+
+                startScreen.style.display =
+                    "none";
+
+            }, 1000);
+        }
     );
 
 </script>
